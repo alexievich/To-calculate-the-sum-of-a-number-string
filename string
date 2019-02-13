@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char number[10];
+    int x = 0, i, length;
+    printf("Enter the three digit number:\n");
+    scanf("%s", &number);
+    length = strlen(number);
+    for(i = 0; i < length; ++i){
+        x = x + (number[i]-48);
+    }
+    printf("Sum the digits you entered: %d", x);
+    return 0;
+}
